@@ -1,0 +1,55 @@
+{
+  "data_status": {
+    "admissions": "SIMULATED; no real hospital outcomes",
+    "environment": "UCI observed; humidity and PM2.5 AQI derived",
+    "rows": 1096,
+    "start": "2014-01-01",
+    "end": "2016-12-31",
+    "admission_seed": 2026,
+    "source_url": "https://archive.ics.uci.edu/static/public/501/beijing+multi+site+air+quality+data.zip"
+  },
+  "evaluation": "Simulated outcomes; rolling seven-day blocks",
+  "split_rows": {
+    "train": 767,
+    "validation": 164,
+    "test": 165
+  },
+  "train_last_date": "2016-02-06",
+  "validation_last_date": "2016-07-19",
+  "test_first_date": "2016-07-20",
+  "test_last_date": "2016-12-31",
+  "test_origins": 24,
+  "full_seven_day_test_origins": 23,
+  "sarima_order": [
+    1,
+    1,
+    1
+  ],
+  "seasonal_order": [
+    1,
+    0,
+    0,
+    7
+  ],
+  "sarima_to_hybrid_improvement_percent": 1.6335324630072519,
+  "surge_at_80": {
+    "threshold": 80,
+    "predicted_alerts": 2,
+    "true_positives": 1,
+    "actual_surges": 7,
+    "precision": 0.5
+  },
+  "features": [
+    "day_of_week",
+    "month",
+    "weekend",
+    "pm25_lag1",
+    "pm25_lag3",
+    "pm25_previous7",
+    "aqi_lag1",
+    "temperature",
+    "humidity",
+    "admissions_lag7",
+    "horizon"
+  ]
+}

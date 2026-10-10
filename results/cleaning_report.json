@@ -1,0 +1,29 @@
+{
+  "input_rows": 1096,
+  "missing_before": {
+    "date": 0,
+    "city": 0,
+    "admissions": 0,
+    "pm25": 37,
+    "aqi": 37,
+    "temperature": 0,
+    "humidity": 0
+  },
+  "duplicates_removed": 0,
+  "missing_dates_added": 0,
+  "invalid_values": {
+    "pm25": 0,
+    "aqi": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "admissions": 0
+  },
+  "environment_values_filled": {
+    "pm25": 37,
+    "aqi": 37,
+    "temperature": 0,
+    "humidity": 0
+  },
+  "admissions_missing_retained": 0,
+  "daily_rows": 1096
+}

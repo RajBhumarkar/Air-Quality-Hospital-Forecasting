@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks_executed": [
+    "CSV loads as 1,096 ordered daily observations; environmental gaps filled.",
+    "Missing/invalid predictors, leading gaps, duplicates and missing dates handled; missing targets preserved.",
+    "Preprocessing prefix invariance, shifted lags, previous-seven-day rolling mean and forecast-time assumptions verified.",
+    "Offline synthetic environmental fallback and AQI breakpoint calculations verified.",
+    "Trained SARIMA converged; fitted XGBoost accepts 11 features; saved models reload.",
+    "Seven-day dates, residual addition, nonnegative forecasts and strict threshold behavior verified.",
+    "Chronological disjoint validation/test, metric recomputation and precision missing-label/no-alert cases verified.",
+    "Adversarial seven-day leakage check: changing every future predictor/outcome leaves all horizon forecasts unchanged.",
+    "Streamlit AppTest renders dashboard and slider changes high-risk count from seven to zero without exceptions."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "command": "python -m streamlit run app.py --server.headless=true --server.address=127.0.0.1 --server.port=8502 --browser.gatherUsageStats=false",
+  "http_status": 200,
+  "health_body": "ok",
+  "browser_verification": "In-app browser timed out reaching the sandboxed loopback server; no dashboard screenshot captured."
+}

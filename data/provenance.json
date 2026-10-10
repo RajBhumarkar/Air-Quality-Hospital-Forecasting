@@ -1,0 +1,9 @@
+{
+  "admissions": "SIMULATED; no real hospital outcomes",
+  "environment": "UCI observed; humidity and PM2.5 AQI derived",
+  "rows": 1096,
+  "start": "2014-01-01",
+  "end": "2016-12-31",
+  "admission_seed": 2026,
+  "source_url": "https://archive.ics.uci.edu/static/public/501/beijing+multi+site+air+quality+data.zip"
+}
